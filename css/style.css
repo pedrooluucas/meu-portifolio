@@ -1,0 +1,219 @@
+/* ESTILO GERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: black;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.btn-contato button {
+    padding: 20px 40px;
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #7700ff;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+h2.titulo {
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+    cursor: default;
+}
+
+h2.titulo span {
+    color: #7700ff;
+}
+
+button:hover,
+form .btn-enviar input:hover {
+    box-shadow: 0px 0px 8px #7700ff;
+    transform: scale(1.05);
+}
+
+
+/* ESTILO CABEÇALHO */
+
+header{
+    padding: 40px 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #5c5c5c;
+    font-size: 18px;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color: aliceblue;
+    text-decoration: underline;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header .btn-contato button{
+    padding: 10px 40px;
+    margin-top: 0px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #7700ff;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+header .btn-contato button:hover{
+    box-shadow: 0px 0px 8px #7700ff;
+}
+
+header img{
+    width: 70%;
+    border-radius: 10%;
+    cursor: none;
+}
+
+header img:hover{
+    box-shadow: 0px 0px 8px #7700ff;
+}
+
+/* ESTILO DO TOPO DO SITE */
+section.topo-do-site {
+    padding: 70px 4%;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1 {
+    color: #fff;
+    font-size: 42px;
+    line-height: 40px;
+    cursor: default;
+}
+
+.topo-do-site .txt-topo-site h1 span {
+    color: #cc00ff;
+}
+
+.topo-do-site .txt-topo-site p {
+    color: #fff;
+    margin: 40px 0;
+    cursor: default;
+}
+
+.topo-do-site .img-topo-site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 50%; /* Define o raio do arredondamento das bordas */
+    cursor: none;
+}
+
+.topo-do-site .img-topo-site img:hover{
+    box-shadow: 0px 0px 40px #7700ff;
+}
+
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
+}
+
+/* ESTILO DAS ESPECIALIDADES */
+
+section.especialidades{
+    padding: 95px 4%;
+}
+
+section.especialidades .flex {
+    gap: 60px;
+}
+
+.especialidades .especialidades-box{
+    color: aliceblue;
+    padding: 80px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.especialidades .especialidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ffffff78;
+}
+
+.especialidades .especialidades-box i{
+    font-size: 70px;
+    color: #7700ff
+}
+
+.especialidades .especialidades-box h3 {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+
+/* Estilos para a barra de rolagem */
+::-webkit-scrollbar {
+    width: 14px; /* Largura da barra de rolagem */
+}
+
+/* Track (a "trilha" da barra de rolagem) */
+::-webkit-scrollbar-track {
+    
+    background: #818181; 
+}
+
+/* Handle (o "botão" da barra de rolagem) */
+::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: #7700ff; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #7524d1; 
+}
